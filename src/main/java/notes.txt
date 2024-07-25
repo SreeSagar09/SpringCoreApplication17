@@ -1,0 +1,35 @@
+A Program to demonstrate the use of @ComponentScan annotation:
+Programs:
+* MaterialComponent.java
+* ProductComponent.java
+* ItemComponent.java
+* AppConfig.java
+* Test.java
+Note:
+* @ComponentScan is used to auto scan the components in the given array of basePackages.
+* The @ComponentScan has some attributes those are below:
+1. basePackages attribute is used to mention the packages to auto scan, And it accept array of package.
+2. basePackageClasses attribute is used to mention the classes to auto scan, And it accepts array of class.
+3. includeFilters attribute is used to mention the include filter class to auto scan, And takes the array of Filter Class.
+4. excludeFilters attribute is used to mention the exclude filter class to auto scan, And takes the array of Filter Class.
+5. value attribute is alias to basePackages
+Output:
+Number of Beans: 8
+Beans Names:
+Number of Beans: 9
+Beans Names:
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+appConfig
+materialComponent
+PRODUCTCOMPONENT
+itemComponent
+ProductComponent Bean
+ProductComponent [productName=Bicycle, quantity=10, price=120.0]
+MaterialComponent Bean
+MaterialComponent [materialName=Paper, quantity=12, price=120.0]
+ItemComponent Bean
+ItemComponent [itemName=Book, quantity=15, price=25.0]
